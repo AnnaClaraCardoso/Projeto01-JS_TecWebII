@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Página que checa um horário de entrada e mostra uma mensagem de "Bom dia", "Boa tarde" ou "Boa noite" -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://kit.fontawesome.com/fa653fbbd5.js" crossorigin="anonymous"></script>
+    <title>Saudações</title>
+</head>
+<body>
+    <h1>Entre com algum horário e receba um cumprimento</h1>
+    <div class="leitor-hora" date-time="00:00">
+        <div class="hora">
+            <span class="hr-up"><i class="fas fa-sort-up"></i></span>
+            <input type="number" class="hr" placeholder="00"/>
+            <span class="hr-down"><i class="fas fa-sort-down"></i></span>
+        </div>
+
+        <div class="separador">:</div>
+
+        <div class="minutos">
+            <span class="min-up"><i class="fas fa-sort-up"></i></span>
+            <input type="number" class="min" placeholder="00"/>
+            <span class="min-down"><i class="fas fa-sort-down"></i></span>
+        </div>
+    </div>
+
+    <button type="button">Testar</button>
+    <p id="res" style="text-align: center; font-size: 2em;">Resposta</p>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
